@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #05b4ff;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body {
+    /* background: url(https://media.istockphoto.com/id/1291971619/photo/web-development-and-web-design-concept-in-dark-blue-background-programming-for-internet.jpg?b=1&s=170667a&w=0&k=20&c=ujn9Hw5hBZQJyYaiOVdhB4Vw5Zz1msJmY_qpr8h4IDs=); */
+    background-color: blueviolet;
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 200vh;
+    width: 100vw;
+    background-position: center;
+    filter: brightness(100%);
+}
+header1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+/*comment section*/
+.wrapper{
+    max-height: 1200px;
+    width: 400px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/*comment box design */
+.wrapper .box{
+    background: rgb(107, 76, 194);
+    border-radius: 10px;
+    padding: 25px;
+    border-color: #042331;
+}
+/*comment box position */
+#div1{
+        float:right;
+        width:100%;
+        height: 400px;
+    }
+    /*logo,star of comment */
+.wrapper .box i{
+        font-size: 10px;
+        color: white;
+    }
+    /*material of comment text */
+.wrapper .box .content{
+        font-size: 10px;
+        color:black;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+.wrapper .box .content .info .job{
+        font-size: 15px;
+        font-weight: 300;
+        color: rgb(248, 103, 132);
+    }
+.wrapper .box.image{
+        height: .005px;
+        width: .005px;
+        border-radius: 50%;
+    } 
+    /*paceful mind */
+.logo {
+    color: rgb(107, 76, 194);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/*side bar design*/
+nav ul {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 260px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:transparent;
+}
+nav ul li {
+	list-style: none;
+}
+/*sidebar menu design */
+nav ul li a {
+	display: block;
+	padding: 25px 0;
+	text-align: center;
+	font-family: montserrat;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	border-bottom: 1px solid #ccc
+}
+nav ul li a:hover {
+	background-color: deepskyblue;
+}
+.right-content {
+	margin-left: 260px;
+}
+/* 3wallpaer design*/
+.section {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
+/* 3wallpaer text design*/ 
+ .text-content h2 {
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+/*welcome yoga and hero*/
+#home {
+	background-image: url(https://vietnam.travel/sites/default/files/inline-images/640184929.jpg) ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.img-area {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 25px auto;
+}
+.img-area img {
+	width: 100%;
+}
+/*for 900px display of slidebar*/
+@media (max-width: 900px) {
+	nav {background: #fff;height: 86px;}
+	nav ul {width: 100%;border-right: none;height: 60px;}
+	nav ul li a {border-bottom: none;float: left;margin-left: 100px;}
+	nav ul li a:hover {background-color: transparent;}
+	.right-content {margin-left: 0;}
+	.img-area {display: none;}
+	.text-content h2 {font-size: 30px;}
+}
+/*for 600px display of slidebar*/
+@media (max-width:600px) {
+	nav {background: #fff;height: 60px;}
+	nav ul li a:hover {background-color: transparent;}
+	nav ul {width: 100%;border-right: none;height: 60px;}
+	nav ul li a {border-bottom: none;float: left;margin-left: 15px;font-size: 12px;}
+	.right-content {margin-left: 0;}
+	.img-area {display: none;}
+	.text-content h2 {font-size: 30px;}
+}
+/*gallary,books design for min display*/
+span {color: rgb(248, 4, 126);}
+.navlist {display: flex;}
+.navlist a {
+    /* color: var(--second-color); */
+    color: rgb(249, 124, 36);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover {
+    color: var(--main-color);
+}
+.navlist a.active {
+    color: var(--main-color);
+}
+#menu-icon {
+    font-size: 35px;
+    color:burlywood;
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section {
+    padding: 160px 15% 120px;
+}
+/*background pic setup of slidebar*/
+.home {
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(100%);
+}
+.home::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*btn hover of about & sevice section*/
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.btn:hover {
+    transform: scale(0.9);
+} 
+/*about us*/
+.about {
+    background-color: #042331;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+/*pic design of about us*/
+.about-img img {
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+/*about design*/
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+/*us design*/
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+/*about us text*/
+.about-text p {
+    color: white;
+    font-size: var(--p-font);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+/*background color of services*/
+.services {
+    padding-top: 150px;
+    background: var(--second-bg-color);
+
+}
+/*our services text design*/
+.main-text {
+    text-align: center;
+}
+/*text  of services*/
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+/*our services text style*/
+.main-text h2 {
+    padding-top: 350px;
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+/*3colom of services*/
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+/*colom box design of services*/
+.box {
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+/*icons in colom of services*/
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+/*yoga,trainer,people design of services*/
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+/*services box */
+.box p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+/*contact section*/
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.row:hover img {
+    transform: scale(1.1);
+
+}
+.row:hover .layer {
+    height: 100%;
+}
+/*color design of contact us*/
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+/*text design of contact us*/
+.contact-text h4 {
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+/*contact information design*/
+.list {
+    margin-bottom: 2.8rem;
+
+}
+.list li {
+    margin-bottom: 12px;
+
+}
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+
+}
+/*contact us icons*/
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover {
+
+    color: var(--main-color);
+}
+/*contact form design*/
+.contact-form form {
+    position: relative;
+}
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+/*send sms button design*/
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
+/*for 1480px display*/
+@media (max-width: 1480px) {
+    header1 {padding: 12px 2.5%;transition: .1s;}
+    section {padding: 110px 3% 60px;}
+    .end {padding: 15px 3%;}
+}
+/*for 1100px display*/
+@media (max-width: 1100px){
+    :root{--big-font:4rem;--h2-font:2.5rem;--p-font:1rem;transition: .1s;}
+    .home-text h3{font-size: 2.5rem;}
+    .home{height: 87vh;}
+}
+/*for 900px display*/
+@media (max-width:920){
+    .about{grid-template-columns: 1fr;}
+    .about-img img{width: 100%;height: auto;max-width: 100%;}
+    .contact{grid-template-columns: 1fr;}
+}
+/*for 480px display*/
+@media (max-width: 480px){
+    #menu-icon{display: block;}
+    .navlist{position: absolute;top: -1000px;right: 0;left: 0;display: flex;flex-direction: column;background: var(--bg-color);text-align: left;transition: all .45s ease;}
+    .navlist a{display: block;margin: 17px;font-size: 20px;transition: all .45s ease;color: var(--text-color);}
+    .navlist a:hover{color: var(--main-color);}
+    navlist a.active{color: var(--text-color);}
+    .navlist.open{top: 100%;}
+}
